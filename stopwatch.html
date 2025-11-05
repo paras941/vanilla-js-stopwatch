@@ -1,28 +1,39 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome to the stopwatch</title>
+    <title>Stopwatch with Laps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stopwatch.css">
     <script src="stopwatch.js" defer></script>
 </head>
-
 <body>
-  <div class="title">
-    <span class="watch1">Toggle</span>
-    <span class="watch2">Track</span>
-  </div>
 
-  <div class="stopwatch">Online Timer & Stopwatch</div>
-  <div class="actualwatch" id="display">00:00:00</div>
-  <div class="sec">Minutes &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp Seconds  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Centiseconds</div>
+    <div class="container">
+        <h1>Stopwatch</h1>
+        
+        <div class="display" id="display">00:00:00</div>
+        
+        <div class="labels">
+            <span>Minutes</span>
+            <span>Seconds</span>
+            <span>Centiseconds</span>
+        </div>
 
-  <div class="buttons">
-    <button class="border1" id="startStop">RESUME</button>
-    <button class="border2" id="reset">RESET</button>
-  </div>
+        <div class="buttons">
+            <button class="btn" id="startButton">START</button>
+            <button class="btn" id="pauseButton">PAUSE</button>
+            <button class="btn" id="lapButton">LAP</button>
+            <button class="btn" id="resetButton">RESET</button>
+        </div>
 
+        <div class="laps-container">
+            <ol id="lapsList"></ol>
+        </div>
+    </div>
 
 </body>
 </html>
