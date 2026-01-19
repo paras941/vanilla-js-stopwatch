@@ -2,7 +2,7 @@
 
 A simple and interactive **Stopwatch & Timer** built using **HTML, CSS, and Vanilla JavaScript**, capable of tracking time with precision up to centiseconds.
 
-🔗 **Live Demo:(Click here)[https://paras941.github.io/vanilla-js-stopwatch/]
+🔗 **Live Demo:[Click here](https://paras941.github.io/vanilla-js-stopwatch/)
 
 ---
 
